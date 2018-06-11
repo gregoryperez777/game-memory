@@ -1,20 +1,16 @@
 import React, { Component } from 'react';
-import './Header.css';
+import './Board.css';
 
-export default class Header extends Component {
+export default class Board extends Component {
 	render() {
+		const cards = [1,2,3,4,5,6];
+
 		return (
-			<header>
-				<div className='title'>Memory Game</div>
-				<div>
-					<button className='button-reset'>
-						Reset
-					</button>	
-				</div>
-				<div className='title'>
-					Intentos	
-				</div>		
-			</header>
+			<div clasName="board">
+				{
+					cards.map((card) => <span>{ card }</span>) 
+				}
+			</div>	
 		);
 	}
 } 
