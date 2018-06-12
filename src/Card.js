@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FlexyFlipCard } from 'flexy-flipcards';
 import './Card.css';
 
 export default class Card extends Component {
@@ -8,7 +9,16 @@ export default class Card extends Component {
 
 		return (
 			<div className="card">
-				<i className={`fa ${icon} fa-5x`}></i>
+
+				<FlexyFlipCard>
+					<div className='portada'>
+						<i ref='flipper' className={`fa ${icon} fa-5x`}></i>	
+					</div>
+					<div className='contenido' ref='flipper'>
+						<p ref='flipper'>Card</p>
+					</div>	
+				</FlexyFlipCard>
+
 			</div>	
 		);
 	}

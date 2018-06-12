@@ -10,7 +10,7 @@ export default class Board extends Component {
 		return (
 			<div className="board">
 				{
-					cards.map((card) => <Card icon={card.icon}/>) 
+					cards.map((card, index) => <Card key={index} icon={card.icon}/>) 
 				}
 			</div>	
 		);
