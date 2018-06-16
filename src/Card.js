@@ -10,7 +10,7 @@ export default class Card extends Component {
 
 		return (
 			<div className="card" onClick={selectedCard}>
-				<Flipcard flipped={isComparing || wasGuessed }>
+				<Flipcard flipped={isComparing || wasGuessed}>
 					<div className='front'>
 					</div>
 					<div className='back'>

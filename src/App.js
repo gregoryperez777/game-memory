@@ -78,13 +78,18 @@ class App extends Component {
 		}, 1000);
 	}
 
+	restartGame () {
+		this.setState(getInitialState());
+	}
 
 	render() {
 		const { cards } = this.state;
 
 		return (
 			<div className='App'>
-				<Header />
+				<Header 
+					reset={() => this.restartGame()}
+				/>
 				<Board 
 					cards={cards}
 					selectedCouple={this.state.selectedCouple}
