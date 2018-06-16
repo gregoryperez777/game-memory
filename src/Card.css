@@ -1,5 +1,29 @@
 .card {
 	width: 125px;
 	height: 125px;
-	background-color: #ffb300;
+}
+
+.front {
+	width: 125px;
+	height: 125px;
+	background-color: #FFB300;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 26px 9px;
+}
+
+.back {
+	width: 125px;
+	height: 125px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(3,220,244);
+	border-radius: 26px 9px;
+}
+
+.ReactFlipCard {
+	width: 100%;
+	height: 100%;
 }
