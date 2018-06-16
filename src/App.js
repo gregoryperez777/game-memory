@@ -46,17 +46,19 @@ class App extends Component {
 		}
 	};
 
+	win (cards) {
+		if (cards.filter((card) => !card.wasGuessed).length === 0) {
+			alert(`Ganaste en ${this.state.numberOfAttempss} intentos!`);
+		}
+	}
+
 	compareCouple (selectedCouple) {
-
-		console.log(selectedCouple);
-
 		this.setState({
 			isComparingCouple: true,
 		});
 		
 		setTimeout(() => {
 			const [firtCard, secondCard] = selectedCouple;
-
 			let cards = this.state.cards;
 
 			if (firtCard.icon === secondCard.icon) {
@@ -69,6 +71,8 @@ class App extends Component {
 				});
 			}
 
+			this.win(cards);
+
 			this.setState({
 				cards,
 				selectedCouple: [],
@@ -76,11 +80,13 @@ class App extends Component {
 				numberOfAttemps: this.state.numberOfAttemps + 1,
 			});	
 		}, 1000);
-	}
+	};
 
 	restartGame () {
 		this.setState(getInitialState());
-	}
+	};
+
+	
 
 	render() {
 		const { cards } = this.state;
@@ -89,6 +95,7 @@ class App extends Component {
 			<div className='App'>
 				<Header 
 					reset={() => this.restartGame()}
+					Attemps={this.state.numberOfAttemps}
 				/>
 				<Board 
 					cards={cards}

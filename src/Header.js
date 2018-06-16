@@ -4,7 +4,7 @@ import './Header.css';
 export default class Header extends Component {
 	render() {
 
-		const { reset } = this.props;
+		const { reset, Attemps } = this.props;
 
 		return (
 			<header>
@@ -15,7 +15,7 @@ export default class Header extends Component {
 					</button>	
 				</div>
 				<div className='title'>
-					Intentos	
+					Intentos: {Attemps}	
 				</div>		
 			</header>
 		);
