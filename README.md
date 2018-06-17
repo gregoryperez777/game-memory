@@ -1,7 +1,7 @@
 ## Game Memory with React.js
 You can see the demo of the project [aquí](https://gregoryperez777.github.io/game-memory/).
 ## Requisitos:
-- NodeJs v7.10.1
+- NodeJs v7.10.1 or higher
 ## Installation
 1. Open the terminal and execute: `git clone https://github.com/gregoryperez777/game-memory.git`  to download the project.
 2. Execute the command: `cd game-memory` to enter the project directory.
