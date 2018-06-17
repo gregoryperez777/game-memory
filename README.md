@@ -1,4 +1,5 @@
 ## Game Memory with React.js
+You can see the demo of the project [aquí](https://gregoryperez777.github.io/game-memory/).
 ## Requisitos:
 - NodeJs v7.10.1
 ## Installation
