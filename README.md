@@ -8,4 +8,4 @@
 4. Execute the command: `npm start` to run the application.
 5. Open the following URL in your browser [http: // localhost: 3000] (http: // localhost: 3000).
 
-![image](https://github.com/gregoryperez777/game-memory/public/game-memory.png)
+![image](https://github.com/gregoryperez777/game-memory/blob/master/public/game-memory.png)
